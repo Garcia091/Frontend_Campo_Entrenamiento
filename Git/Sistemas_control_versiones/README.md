@@ -61,5 +61,10 @@ Este sistema tiene un problema muy claro, y es que al utilizar un único servido
 Cada usuario tiene su propio repositorio. Los distintos repositorios pueden intercambiar y mezclar revisiones entre ellos. Es frecuente el uso de un repositorio, que está normalmente disponible, que sirve de punto de sincronización de los distintos repositorios locales. <br>
 ![image](https://user-images.githubusercontent.com/30872921/132262712-ec1c41db-094b-437d-90ee-dce1540b1ea1.png)
 <br>
-
+Ventajas de sistemas distribuidos
+- No es necesario estar conectado para guardar cambios.
+- Posibilidad de continuar trabajando si el repositorio remoto no está accesible.
+- El repositorio central está más libre de ramas de pruebas
+- Se necesitan menos recursos para el repositorio remoto.
+- Más flexibles al permitir gestionar cada repositorio personal como se quiera.
 
