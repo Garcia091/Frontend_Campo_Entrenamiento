@@ -1,6 +1,5 @@
-# Frontend_Compo_Entrenamiento
-# Configuración
-## Control de versiones:
+# Sistemas de control de versiones
+
 Se llama control de versiones a los diversos cambios que se realizan sobre unproducto. Una versión, revisión o edición de un producto, es el estado en el que se encuentra dicho producto en un momento dato de su desarrollo o modificación. Aunque un sistema de control de versiones puede realizarse de forma manual, es muy aconsejable disponer de herramientas que faciliten
 esta gestión dando lugar a los llamados sistemas de control de versiones o SVC (del inglés
 System Version Control).
@@ -48,22 +47,19 @@ preguntarle al usuario si se debe proceder con la integración automática, y en
 ## Clasificación de control de versiones:
 1. ***Locales:*** <br>
 Los cambios son guardados localmente y no se comparten con nadie.
-  ![image](https://user-images.githubusercontent.com/30872921/132261493-be59ee1b-060e-4c0e-b4fb-050ddd210b89.png) <br>
+![image](https://user-images.githubusercontent.com/30872921/132261493-be59ee1b-060e-4c0e-b4fb-050ddd210b89.png) <br>
 Uno de los métodos más utilizados por la gente a la hora de realizar algún tipo de control de versión de sus cambios, consistía en copiar en un directorio de su equipo local el archivo que iba a ser modificado indicando la fecha de modificación, para que en caso de error se supiese cuál era la última versión guardada.
    
-2. Centralizados:
+2. ***Centralizados:***<br>
 Existe un repositorio centralizado de todo el código, del cual es responsable un único usuario. Se facilitan las tareas administrativas a cambio de reducir   flexibilidad, pues todas las decisiones fuertes (como crear una nueva rama) necesitan la aprobación del responsable.<br>
 ![image](https://user-images.githubusercontent.com/30872921/132262098-67596b57-cfd5-43ec-95d2-c8a483d39b91.png)<br>
 
 En estos sistemas nos encontramos un único servidor que contiene todos los archivos versionados, y los usuarios que forman parte del proyecto se los pueden descargar desde ese servidor centralizado.<br>
 Este sistema tiene un problema muy claro, y es que al utilizar un único servidor centralizado, en caso de problema en ese servidor toda la información se podría perder.
 
-4. Distribuidos <br>
+3. ***Distribuidos:*** <br>
+Cada usuario tiene su propio repositorio. Los distintos repositorios pueden intercambiar y mezclar revisiones entre ellos. Es frecuente el uso de un repositorio, que está normalmente disponible, que sirve de punto de sincronización de los distintos repositorios locales. <br>
 ![image](https://user-images.githubusercontent.com/30872921/132262712-ec1c41db-094b-437d-90ee-dce1540b1ea1.png)
-
-
 <br>
-
-![image](https://user-images.githubusercontent.com/30872921/132256181-79d26a34-beb2-41ce-9703-94f08385a034.png)
 
 
