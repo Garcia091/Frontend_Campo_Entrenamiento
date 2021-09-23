@@ -1,4 +1,4 @@
-# 1. Introducción a git
+# Introducción a git
 
 Git es un sistema de control de versiones distribuido que se diferencia del resto, por el modo en que modela sus datos. Tambien es conocido como
 sistema de control de versiones moderno más utilizado del mundo.  La mayoría de los demás sistemas almacenan la información como una lista de cambios en los archivos, mientras que Git modela sus datos más como un
