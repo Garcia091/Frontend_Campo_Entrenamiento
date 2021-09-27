@@ -68,3 +68,79 @@ Esto emulará un entorno ES2015 + completo y está destinado a ser utilizado en 
 ***webpack-dev-server:*** Use webpack con un servidor de desarrollo que proporcione recarga en vivo. Esto debe usarse solo para el desarrollo.
 Utiliza webpack-dev-middleware debajo del capó, que proporciona acceso rápido en memoria a los activos del paquete web.
 
+![image](https://user-images.githubusercontent.com/30872921/134939213-4b82fa81-7d8f-490a-abad-743285feee03.png)
+
+7. Una vez se complete la instalación de estos módulos, se crea una carpeta /node_modules, en la cual se descargan y almacenan estos módulos para ser utilizados en el proyecto.  
+
+![image](https://user-images.githubusercontent.com/30872921/134940019-e0d45ddf-f5cd-46fd-a7de-b44d85869f6d.png)
+
+8. También se puede visualizar el archivo /package.json donde se adicionan las dependencias  con  las versión más estable que se pueda instalar en la maquina donde se corrió la instalación. 
+
+![image](https://user-images.githubusercontent.com/30872921/134940389-26d9f51b-5779-4373-83a8-d84844abb6db.png)
+
+9. Debido a que estas dependencias quedan configuradas en el archivo /package.json, la carpeta de /node_modules  no puede ser sincronizada en el repositorio, debido a su peso y que en cada maquina puede presentar diferentes instalaciones, ya sea por su sistema operativo (Windows, Linux y todas sus versiones, Mac OS, etc), entre otras factores. Por ello se debe adicionar este directorio en el archivo /.gitignore . 
+
+/.gitignore:  En el gitignore se especificarán todas las rutas y archivos que no se requieren y con ello, el proceso de control de versiones simplemente ignorará esos archivos. Es algo tan habitual que no debíamos de dejarlo pasar en el Manual de Git.
+
+![image](https://user-images.githubusercontent.com/30872921/134940491-5110c61a-fa08-4790-812f-ca9b75745907.png)
+
+10. Procedemos a realizar las configuraciones pertinentes de webpack, para ello adicionaremos el siguiente código JS en el archivo / webpack.config.js.
+```
+const path = require('path');
+module.exports = {
+  entry: './src/app/index.js',
+  output: {
+    filename: 'app.bundle.js',
+    path: path.resolve(__dirname, 'build'),
+  },
+};
+```
+En este archivo se deben adicionar las reglas y demás configuraciones de webpack, por ahora solo se compilara el archivo /src/app/index.js en un archivo app.bundle.js en la carpeta build.
+
+![image](https://user-images.githubusercontent.com/30872921/134940645-a81c0c01-a197-4023-a39c-e13d10f013f9.png)
+
+11. Una vez se almacena el archivo /webpack.config.js se puede compilar el proyecto, para efectos de prueba adicionemos algún ejemplo en el archivo /src/app/index.js.
+
+![image](https://user-images.githubusercontent.com/30872921/134940854-5d1eeb39-a2a6-44cb-b283-87ac9f551041.png)
+
+Luego procedemos a ejecutar el siguiente comando para compilar el proyecto.<br/>
+ `npx webpack`
+ 
+ ![image](https://user-images.githubusercontent.com/30872921/134941030-ccd2b7e6-2b60-44f7-89a5-5a8b5c4bbcc9.png)
+ 
+ Una vez se compila el proyecto, se puede visualizar el directorio /build. Allí se encuentra de momento únicamente /build/app.bundle.js , archivo donde se modifica y comprime el contenido de los archivos  JS configurados en el archivo  /webpack.config.js.
+ 
+12. El mensaje que aparece, indica que el comando npx webpack, se puede ejecutar en diferentes ambientes, con lo cual se logra que la compresión del proyecto cambie, por defecto la compresión o compilado del proyecto se hace en modo producción, pero también se puede hacer en modo desarrollo; los siguientes comandos son los que se poden emplear para cambiar la compilación:
+```
+module.exports = {
+  mode: 'development',
+};
+```
+
+![image](https://user-images.githubusercontent.com/30872921/134942015-7932a953-2126-408e-bde9-e83a402b6a4f.png)
+
+En este caso se puede ver que el archivo /build/app.bundle.js cambia la apariencia, debido a que se está ejecutando en modo desarrollo.
+
+![image](https://user-images.githubusercontent.com/30872921/134942156-b9cc451a-d100-48ca-a085-5050af362644.png)
+
+
+13. A continuación, probaremos algunas configuraciones que se pueden realizar con webpack, para ello se configurará el plugin html-webpack-plugin, con este se simplificara la creación del archivo /src/index.html, una vez se compile el proyecto el archivo queda en la ruta /build/index.html, tal como se especifica en el archivo de configuración de webpack. Se puede profundizar en la página de webpack, donde explican la configuración de un plugin.
+const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin')
+```
+module.exports = {
+  entry: './src/app/index.js',
+  mode: 'development',
+  output: {
+    filename: 'app.bundle.js',
+    path: path.resolve(__dirname, 'build'),
+  },
+  plugins: [
+    new HTMLWebpackPlugin({template: './src/index.html'})
+  ]
+};
+```
+
+
+
+
