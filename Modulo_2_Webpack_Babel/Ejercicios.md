@@ -373,11 +373,11 @@ Ejecutamos el comando en la consola npm run dev o npm run build.
 
 
 ## SITIOS DE CONSULTA Y PROFUNDIZACIÓN
-https://babeljs.io/
-https://webpack.js.org/
-https://www.npmjs.com/
-https://nodejs.org/
-https://github.com/devagiloscarmesa/webpack-project-tutorial.git
+- https://babeljs.io/
+- https://webpack.js.org/
+- https://www.npmjs.com/
+- https://nodejs.org/
+- https://github.com/devagiloscarmesa/webpack-project-tutorial.git
 
 
 
