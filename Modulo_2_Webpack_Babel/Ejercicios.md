@@ -197,3 +197,29 @@ console.log(com.obtenerComentarios());
 
 ![image](https://user-images.githubusercontent.com/30872921/134943750-6773942b-3f38-4e3f-9dda-e0f38ba24abe.png)
 
+Una vez se compile nuevamente el proyecto, con el comando npx webpack podemos visualizar la salida en el navegador y notaremos que estamos usando la sintaxis nueva de JS y no tendremos problemas como lo vimos en los inicios del curso.
+
+![image](https://user-images.githubusercontent.com/30872921/134943939-a782cbc7-baa9-4344-835e-d994190d2cd1.png)
+
+18. A continuación, veamos algunas mejoras que podemos hacer al código, consumiendo un servicio que se encuentra en un sitio [eonet](https://eonet.sci.gsfc.nasa.gov/how-to-guide), sitio que permite consumir datos de prueba para ensayar nuestras aplicaciones.  En este caso consumiremos el api de categorías con la siguiente URL: https://eonet.sci.gsfc.nasa.gov/api/v3/categories. Para ello se empleara el async/await y la función fetch para obtener los datos.
+
+![image](https://user-images.githubusercontent.com/30872921/134944257-b5d2ed11-d48f-47f4-a4de-bb93901cc40a.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134944283-557a241c-b710-4dea-a832-8f93fa22cbea.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134944324-90485887-210d-4463-98c2-83fd6cfc5843.png)
+
+19. A continuación, configuraremos un servidor de desarrollo con otro de los complementos que instalamos previamente, esta dependencia es webpack-dev-server con esto lograremos tener un servidor que este escuchando los cambios que se realizan en el proyecto webpack. Para ello se puede ejecutar el siguiente comando: 
+`npx webpack serve`
+
+![image](https://user-images.githubusercontent.com/30872921/134944480-a8036077-2df3-4554-b854-1f7bfe17fd28.png)
+
+De esta manera se ejecuta un servidor que está escuchando en el puerto 8080, para ver la salida entramos a la siguiente ruta http://localhost:8080. Con esta dependencia se logra que cualquier cambio que hagamos en el proyecto, se visualice inmediatamente, es decir, que no tenemos que recompilar manualmente.
+
+![image](https://user-images.githubusercontent.com/30872921/134944676-96e35ad0-cd23-4814-b8f5-df553318db2a.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134944712-2ca814fd-1faf-4ccd-9424-a01714b9eac2.png)
+
+ De igual forma, se puede realizar algunas configuraciones en el archivo webpack.config.js, que apliquen para la configuración del servidor, para ello realizamos la siguiente configuración.
+ 
+ ![image](https://user-images.githubusercontent.com/30872921/134944758-6513ea77-1994-4014-80f2-ef660ffe94d3.png)
