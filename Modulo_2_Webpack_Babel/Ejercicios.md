@@ -141,6 +141,59 @@ module.exports = {
 };
 ```
 
+![image](https://user-images.githubusercontent.com/30872921/134942653-c4408820-5a59-46e3-82a7-84c50a0ab429.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134942721-088b4729-6789-4962-86a6-ed5b074e6820.png)
+
+14. Una vez se adiciona algún ejemplo en la página /src/index.html, la salida adiciona automáticamente el archivo JS, como se evidencia a continuación. 
+
+![image](https://user-images.githubusercontent.com/30872921/134942790-23543bac-0af5-47cc-afd7-cadb53eca843.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134942869-b81f7ce3-482c-4a32-bd9a-8956bea05136.png)
 
 
+15. También se puede comprimir los archivos html, para los cual se debe cambiar una configuración en el archivo de configuración de webpack. Dicha configuración se corresponde al plugin html-webpack-plugin, la cual emplea mitificación sobre los archivos que se hayan configurado, esto se puede ver en el apartado del repositorio, donde se encuentra la documentación de este complemento.  Para ello se adiciona el siguiente JSON como parámetro al momento de instanciar un objeto de este plugin. 
+```
+minify:  {
+  collapseWhitespace: true,
+  removeComments: true,
+  removeRedundantAttributes: true,
+  removeScriptTypeAttributes: true,
+  removeStyleLinkTypeAttributes: true,
+  useShortDoctype: true
+}
+```
+![image](https://user-images.githubusercontent.com/30872921/134942986-52abc7cb-ad9e-4db7-b736-2749cdc82062.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134943077-8f7b8071-91c3-4f2e-ab23-02d1f1b89020.png)
+
+16. Se puede abrir la página directamente desde el proyecto y se observa que no existe ningún error. 
+
+![image](https://user-images.githubusercontent.com/30872921/134943170-2ec6139a-2ec6-4641-aa45-70cd94bd3e8b.png)
+
+17. A continuación, veremos algunas ventajas que tiene WebPack, respecto a la sintaxis moderna de JS. Para ello definiremos una clase llamada Comentario, definida en la ruta /src/app/comentario.js, de igual forma se puede exportar la clase e importarlo desde otros archivos.  Los siguientes ejemplos se definen en cada uno de los archivos que estamos creando.
+*/src/app/comentario.js*
+
+```
+
+class Comentario{
+    
+    obtenerComentarios(){
+        return [];
+    }
+}
+export default Comentario;
+```
+![image](https://user-images.githubusercontent.com/30872921/134943674-67207d07-312a-4386-bac4-337d8547b3a2.png)
+
+*/src/app/index.js*
+
+```
+import Comentario from './comentario';
+
+const com = new Comentario();
+console.log(com.obtenerComentarios());
+```
+
+![image](https://user-images.githubusercontent.com/30872921/134943750-6773942b-3f38-4e3f-9dda-e0f38ba24abe.png)
 
