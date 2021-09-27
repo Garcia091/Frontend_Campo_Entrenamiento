@@ -297,4 +297,88 @@ module.exports = {
 
 ![image](https://user-images.githubusercontent.com/30872921/134948724-d6cc7156-599f-47fc-88bb-b43d481a7de1.png)
 
+26. Paso seguido volveremos a compilar el proyecto con el fin de evidenciar la extracción del archivo CSS en la carpeta build.
+
+![image](https://user-images.githubusercontent.com/30872921/134949064-efb15582-5f77-4609-bb15-ec8031e298f7.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134949117-6c328d0d-7d28-40e4-8550-0fba5612137a.png)
+
+27. Podríamos asignar mayor orden al proyecto de compilación, indicando la ruta de compresión de los archivos css y js, para ello modificamos el archivo de configuración de WebPack, de modo que las rutas queden la siguiente manera:
+
+- js/app.bundle.js 
+- css/app.bundle.css
+
+![image](https://user-images.githubusercontent.com/30872921/134949388-f77bf0a6-d5c8-4e89-92f2-0d076c52ee41.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134949463-00239cf3-4ef6-441d-a370-1a58538e358e.png)
+
+28. Borre la carpeta de build y vuelva compilar el proyecto y veremos la nueva estructura en el proyecto.
+
+![image](https://user-images.githubusercontent.com/30872921/134949511-d277c5be-3fab-4c8a-a748-e56296332e7f.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134949540-dab8d4c5-dc95-42be-9627-2a724240cc75.png)
+
+29. A continuación, se configurará BABEL en el proyecto para ver su funcionamiento. Para ello configuraremos el archivo .babelrc (la configuración de este archivo se puede encontrar en su sitio). Iniciaremos configurando el archivo de configuración de webpack, agregando la siguiente regla para que verifique todos los archivos JS y convierta el código que no es reconocible por los diferentes navegadores.
+
+ ```
+ {
+     test: /\.js$/,
+     loader: 'babel-loader',
+ }
+```
+![image](https://user-images.githubusercontent.com/30872921/134949680-2de83ca0-57b9-48a2-89b9-0621e294bc49.png)
+
+
+30. Luego adicionamos la siguiente configuración en el archivo .babelrc
+```
+{
+	"presets":["@babel/preset-env"]
+}
+```
+
+![image](https://user-images.githubusercontent.com/30872921/134949838-dd36e5aa-3d79-41da-a8f2-34ae55013c78.png)
+
+31. Si ejecutamos el proyecto, nos debe aparecer el siguiente error, debido a que se están usando sintaxis nuevas y se debe requerir el módulo @babel/polyfill, por lo cual se debe agregar en el archivo de configuración de webpack.
+
+![image](https://user-images.githubusercontent.com/30872921/134949927-fba84771-ecaa-4412-b326-0d196055c016.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134949952-dde47e77-3fee-4217-a992-e82a1146a835.png)
+
+32. Al ejecutar nuevamente, veremos que el proyecto funciona correctamente.
+ 
+![image](https://user-images.githubusercontent.com/30872921/134950004-c7f891cc-8990-4fcb-bd39-d13a4b9dc362.png)
+
+33. Para los errores que presenta IE con fetch, debemos instalar la siguiente dependencia Al ejecutar nuevamente
+`npm i whatwg-fetch`
+
+34. Luego la debemos importar el archivo donde empleemos la función fetch. 
+import {fetch as fetchPolyfill} from 'whatwg-fetch' 
+
+![image](https://user-images.githubusercontent.com/30872921/134950151-2d96827e-306e-4f8a-8d31-0d74e3d492f2.png)
+
+Por último, automatizaremos la tarea de ejecutar los comandos que debemos usar constantemente para compilar y desplegar la aplicación. Para ello modificaremos el archivo package.json.
+  "scripts": {
+    "dev" : "webpack-dev-server --open",
+    "build" : "webpack --mode development ",
+    "produccion": "webpack --mode production "
+  },
+
+![image](https://user-images.githubusercontent.com/30872921/134950281-ac3500b7-f7c5-426c-ba4b-5130891b94e7.png)
+
+Ejecutamos el comando en la consola npm run dev o npm run build.
+
+![image](https://user-images.githubusercontent.com/30872921/134950342-75a68425-5217-48f6-a036-6c10ef326dfe.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134950471-964300cf-2ba3-4c5e-89ec-ce79a22e90b7.png)
+
+
+## SITIOS DE CONSULTA Y PROFUNDIZACIÓN
+https://babeljs.io/
+https://webpack.js.org/
+https://www.npmjs.com/
+https://nodejs.org/
+https://github.com/devagiloscarmesa/webpack-project-tutorial.git
+
+
+
 
