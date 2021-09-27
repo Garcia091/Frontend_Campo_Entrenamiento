@@ -1,4 +1,7 @@
-# A continuación, veamos un ejemplo práctico donde se apliquen los conceptos de webpack y babel.
+# CONFIGURACIÓN DE UN PROYECTO CON WEBPACK Y BABEL 
+
+***A continuación, veamos un ejemplo práctico donde se apliquen los conceptos de webpack y babel.***
+
 1. Crear un proyecto para tenerlo versionado (GitHub) preferiblemente (Si desean pueden crear solo el proyecto y abrirlo directamente con VSC que se encuentra en el paso # 3). El repositorio debe tener un archivo readme.md para poderlo clonar
  
 ![image](https://user-images.githubusercontent.com/30872921/134935404-d090a12d-d261-4bcd-b159-b9a3455469dc.png)
