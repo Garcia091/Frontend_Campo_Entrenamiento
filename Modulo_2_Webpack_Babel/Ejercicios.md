@@ -223,3 +223,78 @@ De esta manera se ejecuta un servidor que está escuchando en el puerto 8080, pa
  De igual forma, se puede realizar algunas configuraciones en el archivo webpack.config.js, que apliquen para la configuración del servidor, para ello realizamos la siguiente configuración.
  
  ![image](https://user-images.githubusercontent.com/30872921/134944758-6513ea77-1994-4014-80f2-ef660ffe94d3.png)
+
+20. A continuación, usaremos otro plugin, el cual servirá para importar archivos css dentro de los archivos JS que se compilen, dicho plugin es 	 y style-loader, para su instalación ejecutaremos en consola el siguiente comando para instalar dicha dependencia:  npm i css-loader  style-loader
+
+![image](https://user-images.githubusercontent.com/30872921/134945645-597d3d8a-44fb-4f62-b972-11f21dd11daf.png)
+
+21. Luego se deben agregar las siguientes reglas al archivo webpack.config.js, con lo cual, se indica con una expresión regular, que teste los archivos que terminen en .css y en dichos casos use las dos dependencias instaladas anteriormente.  El siguiente código JSON, es el que se debe agregar en el archivo. 
+``` 
+module:{
+     rules: [
+         {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],         
+}
+     ]
+  }
+```
+
+![image](https://user-images.githubusercontent.com/30872921/134946708-af85c239-6fe4-45e6-aeb6-8dedcb80e304.png)
+
+
+22. A continuación, creamos el siguiente archivo css /src/app/style.css, el cual lo importaremos desde nuestro archivo JS. 
+
+![image](https://user-images.githubusercontent.com/30872921/134946830-c81d6cbf-af97-46fc-bd1e-5e25ff789217.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134946957-774aadb8-e990-4e9f-bd96-988c9cec7aa3.png)
+
+23. Volvemos a ejecutar los comandos para compilar y desplegar el servidor:
+```
+ npx webpack -d
+	npx webpack-dev-server
+```
+![image](https://user-images.githubusercontent.com/30872921/134947361-2c9bf010-2c50-4d83-9895-671de7a5a94a.png)
+
+
+24. A continuación, separaremos los archivos JS y CSS, debido a que al compilar el proyecto todo el código CSS y JS queda dentro del archivo /build/ app.bundle.js, de este modo se logra que no todo quede concentrado en un único archivo. Para ello, se debe usar el siguiente plugin para realizar extracción de css y de este modo poder lograr una separación en la compilación del proyecto, dicho plugin es mini-css-extract-plugin, por lo cual correremos el siguiente comando para lograr instalar este plugin:
+`npm install mini-css-extract-plugin`
+
+mini-css-extract-plugin: Este complemento extrae CSS en archivos separados. Crea un archivo CSS por archivo JS que contiene CSS. Es compatible con la carga a pedido de CSS y SourceMaps. Se basa en una nueva característica de webpack v4 (tipos de módulos) y requiere webpack 4 para funcionar.
+
+En comparación con el extracto-text-webpack-plugin:
+- Carga asíncrona
+- No duplicar la compilación (rendimiento)
+- Más fácil de usar
+- Específico para CSS
+
+![image](https://user-images.githubusercontent.com/30872921/134947804-1bea7655-df8a-4579-96d7-86249445a402.png)
+
+25. Luego debemos especificar la configuración en el archivo de configuración de WebPack. Para esto, debemos adicionar el siguiente fragmento de código JS.
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+```
+module.exports = {
+  plugins: [
+  	  new MiniCssExtractPlugin({
+          filename: 'app.bundle.css'
+      }),
+  ],
+  module:{
+     rules: [
+         {
+            test: /\.css$/i,
+            use: [MiniCssExtractPlugin.loader, 'css-loader'],
+         }
+     ]
+  }, ,
+};
+```
+![image](https://user-images.githubusercontent.com/30872921/134948351-265ba961-772a-4511-80da-5853717d9ac6.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134948560-3a4ea543-4c88-44d0-ae3c-401d39946f87.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134948773-0fed3975-41d0-4495-9225-0b1598e046a2.png)
+
+![image](https://user-images.githubusercontent.com/30872921/134948724-d6cc7156-599f-47fc-88bb-b43d481a7de1.png)
+
+
