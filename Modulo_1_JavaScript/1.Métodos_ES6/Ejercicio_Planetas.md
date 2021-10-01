@@ -33,7 +33,7 @@
   
 ![image](https://user-images.githubusercontent.com/30872921/135637641-62d9781d-61b2-4bf0-9eb3-b786a0ca2c1a.png)
 
-7.	Agregar la información 
+7.	Agregar la información <br/>
 Agregar archivo con la misma extención `git add *.html`
 
 ![image](https://user-images.githubusercontent.com/30872921/135637717-17dcd363-7da7-46f1-9d1b-16d062a75fc7.png)
