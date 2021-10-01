@@ -1,0 +1,291 @@
+# Planetas
+
+![image](https://user-images.githubusercontent.com/30872921/135636296-dcae6e3f-ed21-4ec9-bd99-3d5640ae329b.png)
+
+1.	Crear la estructura de trabajo
+
+![image](https://user-images.githubusercontent.com/30872921/135636456-98d279b0-1ecb-4631-aaa3-be762bc084cd.png)
+
+2.	Vincular los archivos externos al archivo index.html 
+
+ ![image](https://user-images.githubusercontent.com/30872921/135636545-e21505fa-4372-447a-8287-9aa8a0131157.png)
+
+3.	Inicializar el repositorio con git
+`git init`
+![image](https://user-images.githubusercontent.com/30872921/135636642-fb3a3ff6-fd1a-4e04-b5a7-5c9f37e18d5c.png)
+
+4.	Listar todas las carpeta para ver la carpeta `git ls -al`
+
+![image](https://user-images.githubusercontent.com/30872921/135636738-6e70958e-1b05-4942-9d4c-0fe85fae2afa.png)
+
+5.	Crear la estructura de la aplicación 
+  1.	Agregar el titulo de la pestaña del navegados a planetas.
+  
+  ![image](https://user-images.githubusercontent.com/30872921/135636955-cbbf94a5-7297-4547-814c-512b630ebc80.png)
+  
+  2.	Crear el encabezado principal de la app con una etiqueta <h1>
+  3.	Crear una tabla con el nombre, el tamaño y la distancia del planeta
+  
+  ![image](https://user-images.githubusercontent.com/30872921/135637063-e5a72bb9-4bf3-41f4-9cae-7392ce152000.png)
+  
+
+6.	Realizar un git status para agregar los cambios al staging `git status`
+  
+![image](https://user-images.githubusercontent.com/30872921/135637641-62d9781d-61b2-4bf0-9eb3-b786a0ca2c1a.png)
+
+7.	Agregar la información 
+Agregar archivo con la misma extención
+`git add *.html`
+
+  ![image](https://user-images.githubusercontent.com/30872921/135637717-17dcd363-7da7-46f1-9d1b-16d062a75fc7.png)
+
+`git commit -m "Agregando html"`
+  
+ ![image](https://user-images.githubusercontent.com/30872921/135638301-35700fe5-d25a-4ca5-a64c-a05e023ef4e0.png)
+
+Agregar todos los archivos que estén en una carpeta
+git add style/
+git status
+git commit -m "Agregar carpeta de estilos"
+
+![image](https://user-images.githubusercontent.com/30872921/135638366-30709840-055b-4167-9039-65a124184aad.png)
+
+Agregar todo y luego excluir un archivo
+git add -A
+git reset script/main.js
+
+![image](https://user-images.githubusercontent.com/30872921/135638438-ad438f39-be7b-4c3b-8086-692f5624e0c4.png)
+
+Renombrar main por Peliculas.js
+Agregar el archivo Peliculas y hacer commit
+ `git commit -m “Carpeta del JavaScript”`
+ ![image](https://user-images.githubusercontent.com/30872921/135638530-53f686a1-aca8-4427-93e9-fafea798619f.png)
+
+Verificar el historial de commit 
+`git log`
+ 
+  ![image](https://user-images.githubusercontent.com/30872921/135638614-0bf4942f-f885-45ab-be9b-75671ab00dde.png)
+
+Renombrar la rama de master a main
+`git branch -M main`
+  
+ ![image](https://user-images.githubusercontent.com/30872921/135639384-bd49c980-59ca-47b7-b000-1a1fb115d961.png)
+
+Agregar un repositorio Remoto
+Crear un repositorio y compiar la url del repositorio remoto 
+  
+ ![image](https://user-images.githubusercontent.com/30872921/135639443-666de02e-0be4-4158-8b86-ce01b0ef9bde.png)
+
+Subir la informacion al repositorio 
+git push origin main
+  
+![image](https://user-images.githubusercontent.com/30872921/135639525-c0866a7e-70f2-4d8e-86a8-f98cc223adc9.png)
+
+Hacer cambios en el repositorio para ver como podemos volver a una verison anterior.
+  
+![image](https://user-images.githubusercontent.com/30872921/135639700-328a0c46-af17-459c-acba-29e3ae65d523.png)
+
+Los cambios que realizamos no nos gusta, para regregar al estado del ultio commit realizado, ejecutamos el siguiente comando 
+`git checkout -- . `
+ 
+![image](https://user-images.githubusercontent.com/30872921/135639773-10e85484-7c7e-4deb-a3a2-403c1ff65e5c.png)
+
+Revisar el codigo en visual studio code, los cambios desaparecieron 
+![image](https://user-images.githubusercontent.com/30872921/135639839-5dcb3a6b-d594-47cc-ba6f-163f7bbc4354.png)
+
+8.	Crear la estructura para el html 
+En el cuerpo de la tabla vamos a gregar diferentes inputs para capturar la informacion de los planetas
+ 
+![image](https://user-images.githubusercontent.com/30872921/135639942-ecc3e0ee-c24a-488b-9090-c2e7e1a05e73.png)
+
+Crear diferentes id para utilixar los datos desde JavaScritp
+n_planeta: Numero del planeta
+np_planeta:Nombre del planeta
+d_planeta: distancia del planeta
+t_planeta:tamaño del planeta
+9.	Agregar los botones 
+
+![image](https://user-images.githubusercontent.com/30872921/135640014-929e1c66-823c-460e-abf3-148d3ae326af.png)
+
+Resultado en el navegador
+ 
+![image](https://user-images.githubusercontent.com/30872921/135640154-2c264559-bcda-4f95-866d-164496f82d2b.png)
+
+10.	Hacer commit de los cambios realizados y enviar la informacion al repositorio
+ 
+ ![image](https://user-images.githubusercontent.com/30872921/135640277-14fb10af-dbac-4b9a-a8d7-af6cef519363.png)
+
+11.	Historial de commit 
+git log
+![image](https://user-images.githubusercontent.com/30872921/135640328-b2822fcc-d465-41af-8dc7-9ddb4be16729.png)
+  
+git log --online
+ 
+![image](https://user-images.githubusercontent.com/30872921/135640396-f0283e6f-258b-4170-8f25-c5d3ab1ab95c.png)
+  
+git log --oneline --decorate --all –graph
+ 
+ ![image](https://user-images.githubusercontent.com/30872921/135640447-52dd5e9a-ddbf-4926-83f1-337e5fdec5d4.png)
+
+
+Alias:
+Crear un alias
+git config --global alias.lg "log --oneline --decorate --all --graph"
+ 
+Ahora con el comando lg ejecutamos todo la línea anterior 
+git lg 
+para observar todos los alias que hemos creado
+git config --global -l 
+
+Para saber la rama y los cambios realizados 
+git status -s -b
+ 
+
+Realicemos un cambio a ver qué pasa con el comando anterior. Nos permite ver los cambios de forma resumida
+ 
+Ya tenemos una version estable de nuestra apliacación, vamos a crear ramas para desarrollar 
+Las Ramas son conocidas como líneas de tiempo
+1.	Crear una rama developers
+ 
+2.	Crear cambios en la rama developers
+En el archivo script.js vamos a trabajar con los elementos básicos de la programación (variables, ciclos, array, objetos)
+1.	Crear dos array con nombres planetas y distancia
+ 
+ 
+Tipos de formas de recorrer un array
+1.	Con ciclo while
+ 
+Se debe tener cuidado de no crear un ciclo infinito.
+2.	Ciclo for:
+ 
+ 
+
+Todo objeto tiene internamanete Prototipado que me permite realizar funciones internamente en un array.
+
+ 
+Ciclo for In
+ 
+Recorrer la información de planetas:
+ 
+
+Ciclo For OF
+Estructura:
+ 
+ 
+Operador de igualdad
+= 
+= El operador de JavaScript asigna un valor al operando izquierdo depende del valor del operando disponible en el lado derecho. El primer operando debe ser una variable.
+== 
+El operador == es un operador de igualdad. Comprueba si sus dos operandos son iguales o no cambiando la expresión de un tipo de datos a otros. Puede usar el operador == para comparar la identidad de dos operandos, aunque no sean de un tipo similar.
+===
+•	Igualdad estricta === comprueba que dos valores y sus tipos sean iguales
+
+
+Ejemplo comparar si las distacias de los planetas son igual a ‘5’, para este ejercicio vamos a trabajar con un for In.
+Distancias 
+ 
+ 
+ 
+Operador estricto:
+En este ejercicio no encuentra simulitud porque los tipo y los valores no son iguales.
+ 
+ 
+
+
+Diferencias entre commit y restaurar archivos
+Iniciamos verificando el estado de los archivos.
+ 
+Verificar los cambios que hemos realizados de forma local con la ultima version del respositorio 
+git diff 
+cambios que se realizaron en los archivos, el compara el commit anterior con el escritorio actual
+ 
+Para salir del editor presionamos la letra q
+Verificar todo lo que está en el staged
+git diff --staged
+
+ 
+ 
+Sacarlo del staged:
+git reset HEAD Archivo
+ 
+git diff --staged
+Como vemos en la imgen no tenemos nada en el staging area.
+Actualizar el mensaje del commit. Si en algun momento realizamos un commit con el nombre incorrecto lo podemos renombrar por medio de comando de git.
+Para este ejercicio vamos a volver a subir los cambios y realizmos un commit con el mensaje de “Agregar información de planetas”. Este cambio solo aplica al ultimo commit.
+ 
+La informacion que subi al staging no es correcta, por ende vamos a remombrar el commit 
+git commit --amend -m “Renombrar”
+ 
+Se me olvido agregar un archivo en el commit, para resolver el error uso el siguiente comando 
+git reset --soft HEAD^
+ 
+Verificamos los cambios
+ 
+El commit esta activo, esta a la espera de que carguen nuevamente los datos. Se deben cargar los datos nuevamente con commit.
+ 
+Subir los cambios a la rama developers
+ 
+Si estamos seguros de los cambios realizados en la rama developers, vamos a combinar los cambios con la rama main.
+Merge:
+1. Fast-forward : se dispara cuando git no reconoce cambios y se puede integrar a la rama principal sin ningún problema 
+2. Uniones automática:
+3. Uniones manuales: cuando salen conflictos git pide actualización manual y hace un merge commit para guardar los cambios
+Realicemos el Merge a la rama main.
+Pasos para ramas:
+Crear ramas: git branch nombreRama
+Moverme de rama: git checkout nombreRama. Para hacer un merge debemos estar en la rama a donde vamos a combinar, en este caso main.
+Comparar ramas: git diff nombreRama main.
+ 
+Cuando estamos seguros de la informacion ejercutamos 
+git merge developers – Nota: debe estar parado en la rama que quiere actualizar
+ 
+Verificar que los cambios nuevos si esten en la rama main.
+Subir los cambios al repositorio
+git push origin main
+ 
+La ultima version, esta en la rama main y en developers
+ 
+
+Lenguaje tipado:
+Un lenguaje de programación es fuertemente tipado si no se permiten violaciones de los tipos de datos, es decir, dado el valor de una variable de un tipo concreto, no se puede usar como si fuera de otro tipo distinto a menos que se haga una conversión.
+
+forEach:
+ 
+ 
+
+Map:
+ 
+ 
+La funcion map tiene la opcion de retornar un nuevo array asignandolo a una variable
+ 
+
+Agregar estos nuevos cambios a la rama developers
+1.	Cambiar de rama 
+2.	Agregar cambios 
+3.	Hacer commit 
+4.	Entregar cambios al repositorio
+
+Agregar cambios con conflictos:
+Cambiar el titulo del ejercicio 
+
+Agregar cambios a la rama developers
+ 
+ 
+Combinar las ramas 
+ 
+Ese ejrcicio no genero conflictos vamos a intentarlo de nuevo
+En main:
+ 
+En developers:
+ 
+Se deben tener creados los commit para cada cambio.
+ 
+Tenermos el conflicto creado, en su editor de texto validar que informacion desea conservar
+ 
+Cuando hacemos un merge, el por defecto genera un commit, cuando no se puede completar el proceso la rama en la cual estabas trabajando quedara de esta manera. Soluciona el conflicto y guarda los cambios.
+ 
+Guardar cambios.
+ 
+ 
+Si necesitas borrar la rama lo puedes hacer con el siguiente comando 
+git branch -d developers
