@@ -6,30 +6,30 @@
 
 ![image](https://user-images.githubusercontent.com/30872921/135636456-98d279b0-1ecb-4631-aaa3-be762bc084cd.png)
 
-2.	Vincular los archivos externos al archivo index.html 
+2. Vincular los archivos externos al archivo index.html 
 
 ![image](https://user-images.githubusercontent.com/30872921/135636545-e21505fa-4372-447a-8287-9aa8a0131157.png)
 
-3.	Inicializar el repositorio con git
+3. Inicializar el repositorio con git
 `git init`
 
 ![image](https://user-images.githubusercontent.com/30872921/135636642-fb3a3ff6-fd1a-4e04-b5a7-5c9f37e18d5c.png)
 
-4.	Listar todas las carpeta para ver la carpeta `git ls -al`
+4. Listar todas las carpeta para ver la carpeta `git ls -al`
 
 ![image](https://user-images.githubusercontent.com/30872921/135636738-6e70958e-1b05-4942-9d4c-0fe85fae2afa.png)
 
-5.	Crear la estructura de la aplicación 
-  1. Agregar el titulo de la pestaña del navegados a planetas.
+5. Crear la estructura de la aplicación 
+  - Agregar el titulo de la pestaña del navegados a planetas.
   
   ![image](https://user-images.githubusercontent.com/30872921/135636955-cbbf94a5-7297-4547-814c-512b630ebc80.png)
   
-  2.	Crear el encabezado principal de la app con una etiqueta `<h1>`
-  3.	Crear una tabla con el nombre, el tamaño y la distancia del planeta
+  - Crear el encabezado principal de la app con una etiqueta `<h1>`
+  - Crear una tabla con el nombre, el tamaño y la distancia del planeta
   
   ![image](https://user-images.githubusercontent.com/30872921/135637063-e5a72bb9-4bf3-41f4-9cae-7392ce152000.png)
   
-6.	Realizar un git status para agregar los cambios al staging `git status`
+6. Realizar un git status para agregar los cambios al staging `git status`
   
 ![image](https://user-images.githubusercontent.com/30872921/135637641-62d9781d-61b2-4bf0-9eb3-b786a0ca2c1a.png)
 
