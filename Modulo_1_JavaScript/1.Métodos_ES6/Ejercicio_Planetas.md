@@ -98,10 +98,10 @@ En el cuerpo de la tabla vamos a gregar diferentes inputs para capturar la infor
 ![image](https://user-images.githubusercontent.com/30872921/135639942-ecc3e0ee-c24a-488b-9090-c2e7e1a05e73.png)
 
 Crear diferentes id para utilixar los datos desde JavaScritp
-> n_planeta: Numero del planeta
-> np_planeta:Nombre del planeta
-> d_planeta: distancia del planeta
-> t_planeta:tamaño del planeta
+> n_planeta: Numero del planeta  <br/>
+> np_planeta: Nombre del planeta <br/>
+> d_planeta: distancia del planeta <br/>
+> t_planeta: tamaño del planeta <br/>
 
 9.	Agregar los botones 
 
@@ -192,120 +192,173 @@ Estructura:
 ![image](https://user-images.githubusercontent.com/30872921/135644338-144922b8-4863-42af-8dab-d58611082954.png)
 
  
-Operador de igualdad
-= 
-= El operador de JavaScript asigna un valor al operando izquierdo depende del valor del operando disponible en el lado derecho. El primer operando debe ser una variable.
-== 
-El operador == es un operador de igualdad. Comprueba si sus dos operandos son iguales o no cambiando la expresión de un tipo de datos a otros. Puede usar el operador == para comparar la identidad de dos operandos, aunque no sean de un tipo similar.
-===
+# Operador de igualdad `=`
+`=` El operador de JavaScript asigna un valor al operando izquierdo depende del valor del operando disponible en el lado derecho. El primer operando debe ser una variable.<br/>
+
+`==`
+El operador `==` es un operador de igualdad. Comprueba si sus dos operandos son iguales o no cambiando la expresión de un tipo de datos a otros. Puede usar el operador == para comparar la identidad de dos operandos, aunque no sean de un tipo similar.<br/>
+
+`===`
 •	Igualdad estricta === comprueba que dos valores y sus tipos sean iguales
 
-
 Ejemplo comparar si las distacias de los planetas son igual a ‘5’, para este ejercicio vamos a trabajar con un for In.
-Distancias 
+
+***Distancias***
  
+![image](https://user-images.githubusercontent.com/30872921/135645172-1dcab834-a443-4b25-a915-ff208357bbb2.png)
  
- 
-Operador estricto:
+Operador estricto:<br/>
 En este ejercicio no encuentra simulitud porque los tipo y los valores no son iguales.
  
- 
+![image](https://user-images.githubusercontent.com/30872921/135645809-bdf57310-c743-4373-8864-abe15ad29a38.png)
 
+![image](https://user-images.githubusercontent.com/30872921/135645902-a2d5471a-e715-4316-ad81-0519f58b836d.png)
 
-Diferencias entre commit y restaurar archivos
+## Diferencias entre commit y restaurar archivos
 Iniciamos verificando el estado de los archivos.
- 
-Verificar los cambios que hemos realizados de forma local con la ultima version del respositorio 
-git diff 
-cambios que se realizaron en los archivos, el compara el commit anterior con el escritorio actual
- 
-Para salir del editor presionamos la letra q
-Verificar todo lo que está en el staged
-git diff --staged
 
+![image](https://user-images.githubusercontent.com/30872921/135646057-52273a14-11f9-4d39-951e-487e8ef12e5d.png)
+
+Verificar los cambios que hemos realizados de forma local con la ultima version del respositorio <br/>
+`git diff ` <br/>
+cambios que se realizaron en los archivos, el compara el commit anterior con el escritorio actual
+
+![image](https://user-images.githubusercontent.com/30872921/135646489-e668f775-45bf-4ced-aefd-3b407a64d9cd.png)
+
+Para salir del editor presionamos la letra `q` <br/>
+Verificar todo lo que está en el staged <br/>
+`git diff --staged`
+
+![image](https://user-images.githubusercontent.com/30872921/135646538-9c824738-ee30-45c8-b89d-05d8531a6c11.png)
  
+Sacarlo del staged:<br/>
+`git reset HEAD Archivo `
  
-Sacarlo del staged:
-git reset HEAD Archivo
+![image](https://user-images.githubusercontent.com/30872921/135646607-c9e6556c-802e-474f-83d2-a7f4074f01d2.png)
+
+`git diff --staged` <br/>
+Como vemos en la imgen no tenemos nada en el staging area.<br/>
+Actualizar el mensaje del commit. <br/>
+Si en algun momento realizamos un commit con el nombre incorrecto lo podemos renombrar por medio de comando de git.<br/>
+Para este ejercicio vamos a volver a subir los cambios y realizmos un commit con el mensaje de “Agregar información de planetas”. 
+Este cambio solo aplica al ultimo commit.<br/>
+
+![image](https://user-images.githubusercontent.com/30872921/135647075-709a8089-6a0d-41ef-a9d8-efbfbb9e0208.png)
+
+La informacion que subi al staging no es correcta, por ende vamos a remombrar el commit <br/>
+`git commit --amend -m “Renombrar”`
+
+![image](https://user-images.githubusercontent.com/30872921/135647215-f28c25e7-1043-4ac7-96aa-9a8a449e474e.png)
+
+Se me olvido agregar un archivo en el commit, para resolver el error uso el siguiente comando <br/>
+`git reset --soft HEAD^`
  
-git diff --staged
-Como vemos en la imgen no tenemos nada en el staging area.
-Actualizar el mensaje del commit. Si en algun momento realizamos un commit con el nombre incorrecto lo podemos renombrar por medio de comando de git.
-Para este ejercicio vamos a volver a subir los cambios y realizmos un commit con el mensaje de “Agregar información de planetas”. Este cambio solo aplica al ultimo commit.
- 
-La informacion que subi al staging no es correcta, por ende vamos a remombrar el commit 
-git commit --amend -m “Renombrar”
- 
-Se me olvido agregar un archivo en el commit, para resolver el error uso el siguiente comando 
-git reset --soft HEAD^
- 
+![image](https://user-images.githubusercontent.com/30872921/135647468-9a30d5fa-8b95-41b8-8d9b-041a433c3555.png)
+
 Verificamos los cambios
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135647515-9fcbb60f-c372-4ad3-bc8f-6a0cdfcdf75e.png)
+
 El commit esta activo, esta a la espera de que carguen nuevamente los datos. Se deben cargar los datos nuevamente con commit.
+ 
+![image](https://user-images.githubusercontent.com/30872921/135647776-a15b9942-9634-4bd1-91bd-d88d3703e6df.png)
  
 Subir los cambios a la rama developers
  
+![image](https://user-images.githubusercontent.com/30872921/135647849-060b73df-7921-45e1-987f-59fc0266a4ce.png)
+
 Si estamos seguros de los cambios realizados en la rama developers, vamos a combinar los cambios con la rama main.
-Merge:
-1. Fast-forward : se dispara cuando git no reconoce cambios y se puede integrar a la rama principal sin ningún problema 
-2. Uniones automática:
-3. Uniones manuales: cuando salen conflictos git pide actualización manual y hace un merge commit para guardar los cambios
+Merge:<br/>
+1. ***Fast-forward:*** se dispara cuando git no reconoce cambios y se puede integrar a la rama principal sin ningún problema 
+2. ***Uniones automática:***
+3. ***Uniones manuales:*** cuando salen conflictos git pide actualización manual y hace un merge commit para guardar los cambios
 Realicemos el Merge a la rama main.
-Pasos para ramas:
-Crear ramas: git branch nombreRama
-Moverme de rama: git checkout nombreRama. Para hacer un merge debemos estar en la rama a donde vamos a combinar, en este caso main.
-Comparar ramas: git diff nombreRama main.
- 
+
+Pasos para ramas:<br/>
+***Crear ramas:*** git branch nombreRama
+***Moverme de rama:*** git checkout nombreRama. Para hacer un merge debemos estar en la rama a donde vamos a combinar, en este caso main.
+***Comparar ramas:*** git diff nombreRama main.
+
+![image](https://user-images.githubusercontent.com/30872921/135648168-3a4414c6-88dc-410e-b900-71d22459b26f.png)
+
 Cuando estamos seguros de la informacion ejercutamos 
-git merge developers – Nota: debe estar parado en la rama que quiere actualizar
+`git merge developers`  ***Nota:*** debe estar parado en la rama que quiere actualizar
+
+![image](https://user-images.githubusercontent.com/30872921/135648293-c7809e43-545e-4767-978c-4cb9dbbd0386.png)
  
-Verificar que los cambios nuevos si esten en la rama main.
-Subir los cambios al repositorio
-git push origin main
+Verificar que los cambios nuevos si esten en la rama main.<br/>
+Subir los cambios al repositorio<br/>
+`git push origin main`
  
+![image](https://user-images.githubusercontent.com/30872921/135648388-5d785971-7be9-410b-b067-b67756b84af7.png)
+
 La ultima version, esta en la rama main y en developers
  
+![image](https://user-images.githubusercontent.com/30872921/135648512-1a69b1a4-72e1-4e22-9ecb-3cef2d9f7593.png)
 
-Lenguaje tipado:
+***Lenguaje tipado:***
 Un lenguaje de programación es fuertemente tipado si no se permiten violaciones de los tipos de datos, es decir, dado el valor de una variable de un tipo concreto, no se puede usar como si fuera de otro tipo distinto a menos que se haga una conversión.
 
-forEach:
+> forEach:
  
- 
+![image](https://user-images.githubusercontent.com/30872921/135648706-a3ceb3de-cf3e-4c4f-bd20-323864372137.png)
 
-Map:
- 
- 
+> Map:
+
+![image](https://user-images.githubusercontent.com/30872921/135648763-a362ed72-64e7-4698-a5cc-690a4c3a2970.png)
+
+![image](https://user-images.githubusercontent.com/30872921/135648848-c9ce5663-56f5-401d-bf48-d58e35178baf.png)
+
 La funcion map tiene la opcion de retornar un nuevo array asignandolo a una variable
- 
 
-Agregar estos nuevos cambios a la rama developers
+![image](https://user-images.githubusercontent.com/30872921/135648895-d2afb2f0-4477-4085-a355-0aa5ef572f4b.png)
+
+***Agregar estos nuevos cambios a la rama developers***
 1.	Cambiar de rama 
 2.	Agregar cambios 
 3.	Hacer commit 
 4.	Entregar cambios al repositorio
 
-Agregar cambios con conflictos:
+![image](https://user-images.githubusercontent.com/30872921/135649000-cbd91be9-a5c4-4f4b-922e-83725d1e1ded.png)
+
+***Agregar cambios con conflictos:***
 Cambiar el titulo del ejercicio 
 
+![image](https://user-images.githubusercontent.com/30872921/135649064-ef5a8006-e3de-4f03-991e-5f41c91e253c.png)
+
 Agregar cambios a la rama developers
- 
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135649107-37f5c585-7c8d-46a5-8b89-3e578db42817.png)
+
 Combinar las ramas 
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135649177-79f9859e-c154-4659-99a7-9dbf58bc62ce.png)
+
 Ese ejrcicio no genero conflictos vamos a intentarlo de nuevo
+
 En main:
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135649222-e2f63f3e-68f4-42b5-8b22-a821863750d3.png)
+
 En developers:
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135649251-7c73a693-ad74-44cf-a1e1-3b312e33e002.png)
+
 Se deben tener creados los commit para cada cambio.
  
-Tenermos el conflicto creado, en su editor de texto validar que informacion desea conservar
- 
+![image](https://user-images.githubusercontent.com/30872921/135649309-2efb5afe-ed24-47e1-a342-a703d0ae6690.png)
+
+Tenermos el conflicto creado, en su editor de texto validar que informacion desea conservar.
+
+![image](https://user-images.githubusercontent.com/30872921/135649372-14024163-2b0f-4479-bfb9-5f65d60153ef.png)
+
 Cuando hacemos un merge, el por defecto genera un commit, cuando no se puede completar el proceso la rama en la cual estabas trabajando quedara de esta manera. Soluciona el conflicto y guarda los cambios.
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135649430-bb727ac8-668e-400f-ae55-6425a92a544c.png)
+
 Guardar cambios.
- 
- 
-Si necesitas borrar la rama lo puedes hacer con el siguiente comando 
-git branch -d developers
+
+![image](https://user-images.githubusercontent.com/30872921/135649486-1ed7d1f9-158b-48b3-ba73-298bed2a6900.png)
+
+Si necesitas borrar la rama lo puedes hacer con el siguiente comando <br/>
+`git branch -d developers`
