@@ -8,10 +8,11 @@
 
 2.	Vincular los archivos externos al archivo index.html 
 
- ![image](https://user-images.githubusercontent.com/30872921/135636545-e21505fa-4372-447a-8287-9aa8a0131157.png)
+![image](https://user-images.githubusercontent.com/30872921/135636545-e21505fa-4372-447a-8287-9aa8a0131157.png)
 
 3.	Inicializar el repositorio con git
 `git init`
+
 ![image](https://user-images.githubusercontent.com/30872921/135636642-fb3a3ff6-fd1a-4e04-b5a7-5c9f37e18d5c.png)
 
 4.	Listar todas las carpeta para ver la carpeta `git ls -al`
@@ -23,36 +24,34 @@
   
   ![image](https://user-images.githubusercontent.com/30872921/135636955-cbbf94a5-7297-4547-814c-512b630ebc80.png)
   
-  2.	Crear el encabezado principal de la app con una etiqueta <h1>
+  2.	Crear el encabezado principal de la app con una etiqueta `<h1>`
   3.	Crear una tabla con el nombre, el tamaño y la distancia del planeta
   
   ![image](https://user-images.githubusercontent.com/30872921/135637063-e5a72bb9-4bf3-41f4-9cae-7392ce152000.png)
   
-
 6.	Realizar un git status para agregar los cambios al staging `git status`
   
 ![image](https://user-images.githubusercontent.com/30872921/135637641-62d9781d-61b2-4bf0-9eb3-b786a0ca2c1a.png)
 
 7.	Agregar la información 
-Agregar archivo con la misma extención
-`git add *.html`
+Agregar archivo con la misma extención `git add *.html`
 
-  ![image](https://user-images.githubusercontent.com/30872921/135637717-17dcd363-7da7-46f1-9d1b-16d062a75fc7.png)
+![image](https://user-images.githubusercontent.com/30872921/135637717-17dcd363-7da7-46f1-9d1b-16d062a75fc7.png)
 
 `git commit -m "Agregando html"`
   
  ![image](https://user-images.githubusercontent.com/30872921/135638301-35700fe5-d25a-4ca5-a64c-a05e023ef4e0.png)
 
-Agregar todos los archivos que estén en una carpeta
-git add style/
-git status
-git commit -m "Agregar carpeta de estilos"
+Agregar todos los archivos que estén en una carpeta <br/>
+`git add style/` <br/>
+`git status` <br/>
+`git commit -m "Agregar carpeta de estilos"` <br/>
 
 ![image](https://user-images.githubusercontent.com/30872921/135638366-30709840-055b-4167-9039-65a124184aad.png)
 
 Agregar todo y luego excluir un archivo
-git add -A
-git reset script/main.js
+`git add -A`<br/>
+`git reset script/main.js`
 
 ![image](https://user-images.githubusercontent.com/30872921/135638438-ad438f39-be7b-4c3b-8086-692f5624e0c4.png)
 
@@ -66,18 +65,17 @@ Verificar el historial de commit
  
   ![image](https://user-images.githubusercontent.com/30872921/135638614-0bf4942f-f885-45ab-be9b-75671ab00dde.png)
 
-Renombrar la rama de master a main
-`git branch -M main`
+Renombrar la rama de master a main `git branch -M main`
   
  ![image](https://user-images.githubusercontent.com/30872921/135639384-bd49c980-59ca-47b7-b000-1a1fb115d961.png)
 
-Agregar un repositorio Remoto
+Agregar un repositorio Remoto <br/>
 Crear un repositorio y compiar la url del repositorio remoto 
   
  ![image](https://user-images.githubusercontent.com/30872921/135639443-666de02e-0be4-4158-8b86-ce01b0ef9bde.png)
 
 Subir la informacion al repositorio 
-git push origin main
+`git push origin main`
   
 ![image](https://user-images.githubusercontent.com/30872921/135639525-c0866a7e-70f2-4d8e-86a8-f98cc223adc9.png)
 
@@ -86,23 +84,25 @@ Hacer cambios en el repositorio para ver como podemos volver a una verison anter
 ![image](https://user-images.githubusercontent.com/30872921/135639700-328a0c46-af17-459c-acba-29e3ae65d523.png)
 
 Los cambios que realizamos no nos gusta, para regregar al estado del ultio commit realizado, ejecutamos el siguiente comando 
-`git checkout -- . `
+`git checkout -- .`
  
 ![image](https://user-images.githubusercontent.com/30872921/135639773-10e85484-7c7e-4deb-a3a2-403c1ff65e5c.png)
 
 Revisar el codigo en visual studio code, los cambios desaparecieron 
+
 ![image](https://user-images.githubusercontent.com/30872921/135639839-5dcb3a6b-d594-47cc-ba6f-163f7bbc4354.png)
 
-8.	Crear la estructura para el html 
+8.	Crear la estructura para el html <br/>
 En el cuerpo de la tabla vamos a gregar diferentes inputs para capturar la informacion de los planetas
  
 ![image](https://user-images.githubusercontent.com/30872921/135639942-ecc3e0ee-c24a-488b-9090-c2e7e1a05e73.png)
 
 Crear diferentes id para utilixar los datos desde JavaScritp
-n_planeta: Numero del planeta
-np_planeta:Nombre del planeta
-d_planeta: distancia del planeta
-t_planeta:tamaño del planeta
+> n_planeta: Numero del planeta
+> np_planeta:Nombre del planeta
+> d_planeta: distancia del planeta
+> t_planeta:tamaño del planeta
+
 9.	Agregar los botones 
 
 ![image](https://user-images.githubusercontent.com/30872921/135640014-929e1c66-823c-460e-abf3-148d3ae326af.png)
@@ -115,62 +115,82 @@ Resultado en el navegador
  
  ![image](https://user-images.githubusercontent.com/30872921/135640277-14fb10af-dbac-4b9a-a8d7-af6cef519363.png)
 
-11.	Historial de commit 
-git log
+11.	Historial de commit <br/>
+`git log`
+
 ![image](https://user-images.githubusercontent.com/30872921/135640328-b2822fcc-d465-41af-8dc7-9ddb4be16729.png)
   
-git log --online
+`git log --online`
  
 ![image](https://user-images.githubusercontent.com/30872921/135640396-f0283e6f-258b-4170-8f25-c5d3ab1ab95c.png)
   
-git log --oneline --decorate --all –graph
+`git log --oneline --decorate --all –graph`
  
  ![image](https://user-images.githubusercontent.com/30872921/135640447-52dd5e9a-ddbf-4926-83f1-337e5fdec5d4.png)
 
 
-Alias:
-Crear un alias
-git config --global alias.lg "log --oneline --decorate --all --graph"
- 
-Ahora con el comando lg ejecutamos todo la línea anterior 
-git lg 
-para observar todos los alias que hemos creado
-git config --global -l 
+## Alias:
+***Crear un alias*** <br/>
+`git config --global alias.lg "log --oneline --decorate --all --graph"`
+![image](https://user-images.githubusercontent.com/30872921/135642714-6e3d15b5-3da9-46db-a1a5-4f7076c9d947.png)
+
+Ahora con el comando lg ejecutamos todo la línea anterior <br/>
+`git lg`<br/>
+para observar todos los alias que hemos creado<br/>
+`git config --global -l` <br/>
+
+![image](https://user-images.githubusercontent.com/30872921/135643454-873819fc-c662-4fd0-bc96-ad9d8dd0f81a.png)
 
 Para saber la rama y los cambios realizados 
 git status -s -b
  
+![image](https://user-images.githubusercontent.com/30872921/135643507-a001c03c-a524-4c3f-bba4-547563317068.png)
 
 Realicemos un cambio a ver qué pasa con el comando anterior. Nos permite ver los cambios de forma resumida
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135643626-5d43b830-8ea2-4dce-8d09-c17432ae8d2b.png)
+
 Ya tenemos una version estable de nuestra apliacación, vamos a crear ramas para desarrollar 
 Las Ramas son conocidas como líneas de tiempo
 1.	Crear una rama developers
  
+![image](https://user-images.githubusercontent.com/30872921/135643713-c99d4231-b199-49ae-b89e-be19500b824f.png)
+
 2.	Crear cambios en la rama developers
 En el archivo script.js vamos a trabajar con los elementos básicos de la programación (variables, ciclos, array, objetos)
 1.	Crear dos array con nombres planetas y distancia
  
- 
+![image](https://user-images.githubusercontent.com/30872921/135643771-ae2132d3-9bbc-4604-a24c-30778114527f.png)
+
 Tipos de formas de recorrer un array
 1.	Con ciclo while
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135643835-b0e92cd3-4009-4e14-afae-a34b6e4bd89c.png)
+
 Se debe tener cuidado de no crear un ciclo infinito.
 2.	Ciclo for:
- 
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135643948-0e3dfd64-221b-4f5d-95d4-2e1479f5c423.png)
+
+![image](https://user-images.githubusercontent.com/30872921/135644076-29499004-900b-4477-a980-ff2c6e71b5f1.png)
 
 Todo objeto tiene internamanete Prototipado que me permite realizar funciones internamente en un array.
 
- 
+![image](https://user-images.githubusercontent.com/30872921/135644171-cfa07f37-1f34-48d0-874f-955828cf37de.png)
+
 Ciclo for In
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135644246-fa13042b-c015-41a9-abf7-a2d5f4f6103a.png)
+
 Recorrer la información de planetas:
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135644295-bb1e1e5f-05bd-48ac-b1e4-86d7470676d9.png)
 
 Ciclo For OF
 Estructura:
- 
+
+![image](https://user-images.githubusercontent.com/30872921/135644338-144922b8-4863-42af-8dab-d58611082954.png)
+
  
 Operador de igualdad
 = 
