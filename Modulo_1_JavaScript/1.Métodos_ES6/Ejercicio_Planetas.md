@@ -20,7 +20,7 @@
 ![image](https://user-images.githubusercontent.com/30872921/135636738-6e70958e-1b05-4942-9d4c-0fe85fae2afa.png)
 
 5.	Crear la estructura de la aplicación 
-  1.	Agregar el titulo de la pestaña del navegados a planetas.
+  1. Agregar el titulo de la pestaña del navegados a planetas.
   
   ![image](https://user-images.githubusercontent.com/30872921/135636955-cbbf94a5-7297-4547-814c-512b630ebc80.png)
   
