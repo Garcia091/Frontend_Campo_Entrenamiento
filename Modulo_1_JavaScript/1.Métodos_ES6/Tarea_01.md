@@ -4,6 +4,8 @@ Realizar una aplicación que permita escoger el insecto preferido usando funcion
 
 ![image](https://user-images.githubusercontent.com/30872921/135880061-615b2d53-c6e6-4e70-9e23-d11ea5ea3de5.png)
 
+![image](https://user-images.githubusercontent.com/30872921/135883967-4f5ff53a-2dd9-4626-8078-071e8adaf987.png)
+
 Crear la estructura de trabajo
 
  ![image](https://user-images.githubusercontent.com/30872921/135880094-2c2ff410-dabf-4e52-b790-a6ad91c4ab7f.png)
@@ -91,12 +93,25 @@ El selector de tipo clase visible se debe agregar de forma temporal
 
 Componente de insectos:
  
+![image](https://user-images.githubusercontent.com/30872921/135882938-478aaaa3-0163-4d81-9327-2153f65ace39.png)
+
 
 Para controlar el componente de insecto agregamos de forma temporal esta división 
  
+![image](https://user-images.githubusercontent.com/30872921/135882984-a2faf8e4-e7bf-4928-b93d-28a294fe9549.png)
+
 Agregar elementos de JavaScript
  
- 
+![image](https://user-images.githubusercontent.com/30872921/135883039-2fc1ffdf-47da-40a9-be89-e46f2b6ef29d.png)
+
+![image](https://user-images.githubusercontent.com/30872921/135883097-5a0b256d-8286-44e4-879b-00f224887f21.png)
+
+![image](https://user-images.githubusercontent.com/30872921/135883139-d44b86ce-36b4-4217-8cfd-916ef104b360.png)
+
+![image](https://user-images.githubusercontent.com/30872921/135883175-bcef4c7d-8391-4a5f-9915-5b191893c301.png)
+
+![image](https://user-images.githubusercontent.com/30872921/135883215-887dff5b-4f74-4be5-aeae-0a6fdf2c068e.png)
+
 
  
  
