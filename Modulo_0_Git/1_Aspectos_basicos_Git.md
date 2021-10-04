@@ -20,6 +20,21 @@ Saber manejar un sistema de control de versiones dejó de ser una opción en el 
 
 [GitLab](https://about.gitlab.com/), [SourceForge](https://sourceforge.net/) , [BitBucket](https://bitbucket.org/) o , [GitHub](https://github.com/)
 
+## Qué es GitHub
+GitHub es una plataforma de alojamiento, propiedad de Microsoft, que ofrece a los desarrolladores la posibilidad de crear repositorios de código y guardarlos en la nube de forma segura, usando un sistema de control de versiones, llamado Git.
+
+Facilita la organización de proyectos y permite la colaboración de varios desarrolladores en tiempo real. Es decir, nos permite centralizar el contenido del repositorio para poder colaborar con los otros miembros de nuestra organización.
+
+## Ventajas de GitHub
+Existe un gran número de razones que convierten a GitHub en una gran opción para el control y gestión de tus proyectos de código. Aquí algunas de ellas:
+- GitHub permite que alojemos proyectos en repositorios de forma gratuita
+- Te brinda la posibilidad de personalizar tu perfil en la plataforma
+- Los repositorios son públicos por defecto. Sin embargo, GitHub te permite también alojar tus proyectos de forma privada
+- Puedes crear y compartir páginas web estáticas con GitHub Pages
+- Facilita compartir tus proyectos de una forma mucho más fácil y crear un portafolio
+- Te permite colaborar para mejorar los proyectos de otros y a otros mejorar o aportar a los tuyos
 
 ## Diferencias entre Git y GitHub
 ![image](https://user-images.githubusercontent.com/30872921/134777007-e1fa9277-01ca-42cb-adb9-778f2e4060be.png)
+
+Debes tener en cuenta que Git es un sistema que permite establecer un control de versiones, mientras que GitHub es una plataforma que ofrece un grupo de funciones que facilitan el uso de Git y la colaboración en tiempo real, así como el almacenamiento en la nube.
