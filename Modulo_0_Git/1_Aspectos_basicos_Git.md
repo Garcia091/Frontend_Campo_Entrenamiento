@@ -38,3 +38,9 @@ Existe un gran número de razones que convierten a GitHub en una gran opción pa
 ![image](https://user-images.githubusercontent.com/30872921/134777007-e1fa9277-01ca-42cb-adb9-778f2e4060be.png)
 
 Debes tener en cuenta que Git es un sistema que permite establecer un control de versiones, mientras que GitHub es una plataforma que ofrece un grupo de funciones que facilitan el uso de Git y la colaboración en tiempo real, así como el almacenamiento en la nube.
+
+La diferencia entre Git y Github parte de entender quién controla y dónde se controla.
+Git es un sistema a base de comandos que nos permite controlar las versiones generadas en un proyecto.
+Github es el servidor donde puedes hospedar tu proyecto y a través de una interfaz web administrar las versiones generadas por git
+
+
