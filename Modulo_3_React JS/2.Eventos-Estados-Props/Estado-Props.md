@@ -218,27 +218,40 @@ Y crear un archivo AppRouter.js
 
 Agregar el enrutamiento importando las dependencias 
  
+ ![image](https://user-images.githubusercontent.com/30872921/136865457-dae979ff-f48d-4005-a396-86998773f3d9.png)
+
 Crear la estructura de enrutamiento 
- 
+
+![image](https://user-images.githubusercontent.com/30872921/136865490-8f1eaa67-2ae3-4b85-b5f4-c66b2d2b5233.png)
+
 Crear la url para detalles y para la pagina principal 
- 
+
+![image](https://user-images.githubusercontent.com/30872921/136865524-241597de-5860-4fd4-8d1f-e71e8dd90447.png)
+
 Renderizar AppRouter en index.js
  
+ ![image](https://user-images.githubusercontent.com/30872921/136865687-f38f8c1f-4ad7-477a-ba04-41b95857773e.png)
+
 La url de detalle va a hacer dinámica
  
-¿Como enviar datos por url en React?
+ ![image](https://user-images.githubusercontent.com/30872921/136865701-9c70fbd8-0389-4e9c-b1f8-92db4b624b66.png)
 
-
+## ¿Como enviar datos por url en React?
 
 Agregar la barra de navegación al enrutamiento 
 Borrar el componente Navbar del contenedor y agregarlo en AppRouter.js
+![image](https://user-images.githubusercontent.com/30872921/136865722-0e0d4ebe-1a0e-4bd3-87ea-90ddcd4459c2.png)
  
 En NavBar.js importar react-router-dom y utlizar el componente Link
- 
+
+![image](https://user-images.githubusercontent.com/30872921/136865944-eea9c707-0b7d-4e67-a9ce-f4984bc75250.png)
+
 Todas las etiquetas <a> van a cambiar por Link
  
+![image](https://user-images.githubusercontent.com/30872921/136865961-77b82673-2103-493d-ac93-548d19ba5bc8.png)
  
 La palabra href cambia por to y se le asigna la url que creamos en AppRouter.js
+
 
 
 
