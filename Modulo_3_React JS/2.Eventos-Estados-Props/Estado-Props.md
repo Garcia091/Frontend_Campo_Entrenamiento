@@ -209,11 +209,13 @@ Agregar el contenido de Bootstrap
 Cuando copiamos elementos puros de HTML React no soporta algunas etiquetas ya que no tiene cierre o su singtaxis en este marco de trabajo se implementa de diferente manera
 1.	Buscar todas las eqtiquetas que no tienen cierre y con un / generarle el cierre
 
-
+![image](https://user-images.githubusercontent.com/30872921/136863660-0e6c6804-a333-43bf-b715-99090a3b5e42.png)
 
 Renderizar el componente en el container, para esto vamos a crear una carpeta llama routers
 Y crear un archivo AppRouter.js
- 
+
+![image](https://user-images.githubusercontent.com/30872921/136863685-d79d0baf-97d5-421d-bea2-b5011cc5c3f3.png)
+
 Agregar el enrutamiento importando las dependencias 
  
 Crear la estructura de enrutamiento 
